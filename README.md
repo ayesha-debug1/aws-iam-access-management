@@ -25,10 +25,10 @@ AWS Account
 
 ### Resources Created
 
-| RESOURCE |                           | NAME |                                         | PURPOSE |
-  IAM user                              dev-user & admin-user                          Developer identity 
-  IAM group                             Developers & admin                        Group-based permission management 
-  AWS managed policy                    ReadOnlyAccess                       Demonstration of read-only permissions 
+| RESOURCE |       IAM user --- IAM group --- AWS managed policy
+| NAME |           'dev-user' & 'admin-user' --- 'Developers' group & 'admin' group --- 'ReadOnlyAccess'      
+| PURPOSE |        Developer identity --- Group-based permission management --- Demonstration of read-only permissions
+  
 
 
 ## Implementation Steps
