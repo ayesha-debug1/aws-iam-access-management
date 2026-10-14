@@ -88,10 +88,33 @@ Performed the following tests and recorded the actual results.
 
 Captured screenshots of:
 
-- Developer group permissions: `../screenshots/iam-groups.png`
-- Developer user membership: `../screenshots/developer-permissions.png`
-- Access-denied test: `../screenshots/access-denied-test.png`
+**Developer sign-in**
 
+![Developer sign-in](Screenshots/dev-signin.png)
+
+**Read-only access (Developers group policy)**
+
+![Read-only access](Screenshots/Read-only-access.png)
+
+**Developer group membership and permissions**
+
+![Verify group and permissions](Screenshots/verify-group-and-perm.png)
+
+**Access-denied test (resource creation blocked)**
+
+![Access denied](Screenshots/Access-denied.png)
+
+**Admin sign-in**
+
+![Admin sign-in](Screenshots/Admin-signin.png)
+
+**Admin resource creation (successful)**
+
+![Resource creation successful](Screenshots/Resource-creation-successfull.png)
+
+**Admin group membership and permissions**
+
+![Verify group and permission](Screenshots/verify-group-and-permission.png)
 
 
 
