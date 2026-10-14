@@ -2,6 +2,7 @@ Architecture Design
 
 The project uses the following structure:
 
+```
 AWS Account
 |
 |-- IAM Group: Developers
@@ -14,8 +15,8 @@ AWS Account
     |
     |-- IAM User: admin-user
     |
-    |-- Administrative permissions 
-
+    |-- Administrative permissions
+```
 
 
 # AWS IAM Project Implementation Steps
@@ -61,19 +62,25 @@ The results help explain how AWS IAM supports access control and why permissions
 
 Performed the following tests and recorded the actual results.
 
-| Test |                                             | Expected Result |                                          | Actual Result |
+### Developer (dev-user)
 
- Developer sign-in                                       Successful                                                 Successful
- View permitted AWS resources                            Allowed where authorized                                   Successfully viewed resources
- Attempt a resource-creation action                      Denied where no permission allows it                       Access denied 
- Verify group membership                                 Correct membership                                         dev-user belongs to Developers group  
- Verify attached policy                                  Is attached successfully                                   Is attached successfully
+| Test | Expected Result | Actual Result |
+|------|-----------------|---------------|
+| Developer sign-in | Successful | Successful |
+| View permitted AWS resources | Allowed where authorized | Successfully viewed resources |
+| Attempt a resource-creation action | Denied where no permission allows it | Access denied |
+| Verify group membership | Correct membership | dev-user belongs to Developers group |
+| Verify attached policy | Is attached successfully | Is attached successfully |
 
- Admin sign-in                                           Successful                                                 Successful
- View permitted AWS resources                            Allowed where authorized                                   Successfully viewed resources
- Attempt a resource-creation action                      creation successfull due to full access                    Successful
- Verify group membership                                 Correct membership                                         admin-user belongs to admin group
- Verify attached policy                                  Is attached successfully                                   Is attached successfully
+### Admin (admin-user)
+
+| Test | Expected Result | Actual Result |
+|------|-----------------|---------------|
+| Admin sign-in | Successful | Successful |
+| View permitted AWS resources | Allowed where authorized | Successfully viewed resources |
+| Attempt a resource-creation action | Creation successful due to full access | Successful |
+| Verify group membership | Correct membership | admin-user belongs to Admins group |
+| Verify attached policy | Is attached successfully | Is attached successfully |
 
 
 
