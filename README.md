@@ -25,9 +25,12 @@ AWS Account
 
 ### Resources Created
 
--IAM users
--IAM groups
--policies
+| RESOURCE                  | NAME                             | PURPOSE                                |
+|---------------------------|----------------------------------|----------------------------------------|
+| IAM user                  | Dev_user                         | Developer identity                     |
+| IAM group                 | Admin_user                       | Group-based permission management      |
+| AWS managed policy        | Readonlyaccess                   | Demonstration of read-only permissions |
+
   
 
 
@@ -44,12 +47,12 @@ AWS Account
 
 ## Testing and Results
 
-| Test |                                 | Expected Result |                      | Actual Result |
-
-User sign-in                               Successful                              Successfull  
-View permitted resources                   Allowed where authorized                successfully viewed resources
-Attempt resource creation                  Denied where not authorized             Access denied
-Verify group membership                    dev-user belongs to Developers          Verified
+| Test                      | Expected Result                  | Actual Result              |
+|---------------------------|----------------------------------|----------------------------|
+| User sign-in              | Successful                       | Successful                 |
+| View permitted resources  | Allowed where authorized         | Successfully viewed resources |
+| Attempt resource creation | Denied where not authorized      | Access denied              |
+| Verify group membership   | dev-user belongs to Developers   | Verified                   |
 
 
 ## Security Best Practices
