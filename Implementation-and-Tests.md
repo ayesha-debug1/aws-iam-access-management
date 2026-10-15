@@ -66,8 +66,3 @@ Performed the following tests and recorded the actual results.
 This lab demonstrated how AWS Identity and Access Management (IAM) users, groups, and policies work together to control access to cloud resources. By assigning permissions through groups and applying the principle of least privilege, each user was given only the access needed for their role. Testing the access controls confirmed that permitted actions succeeded while restricted actions were denied, showing how AWS evaluates permissions in practice. Overall, the lab reinforced that careful permission design, regular reviews, and good security habits such as enabling MFA and keeping credentials out of repositories are essential for keeping an AWS environment secure
 
 <br>
-
-## 6. References
-
-- [AWS IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)
-- [AWS IAM Security Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
