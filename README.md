@@ -1,58 +1,54 @@
 # aws-iam-access-management
 A hands-on AWS IAM project demonstrating users, groups, policies, and access control testing.
-
+<br>
 ## Project Overview
 This project demonstrates AWS Identity and Access Management (IAM) through a practical lab. It covers IAM users, groups, policies, least-privilege principles, and permission testing.
 
+<br>
 
-## Objectives
+## Problem Statement
 
-- Understand AWS IAM users and groups.
-- Assign permissions using IAM policies.
-- Implement role-based access organization through groups.
-- Test allowed and denied actions.
-- Document implementation and results.
+Without proper access management, cloud environments are exposed to security risks such as excessive permissions, unauthorized access, and accidental changes to critical resources. Managing permissions user by user is also difficult to scale, easy to get wrong, and hard to audit.
 
+<br>
 
-## Architecture
+## Proposed Solution
 
-AWS Account  
-→ IAM Users  
-→ IAM Groups  
-→ IAM Policies  
-→ Permission Testing
+This project uses AWS IAM to create users and groups and assigns permissions through policies that follow the principle of least privilege. Access controls are then tested with allowed and denied actions to confirm that each user can only perform the tasks their role requires.
 
+<br>
+<br>
 
-### Resources Created
+## Architecture Design
 
-| RESOURCE                  | NAME                             | PURPOSE                                |
-|---------------------------|----------------------------------|----------------------------------------|
-| IAM user                  | Dev_user                         | Developer identity                     |
-| IAM group                 | Admin_user                       | Group-based permission management      |
-| AWS managed policy        | Readonlyaccess                   | Demonstration of read-only permissions |
+The project uses the following structure:
 
-  
+```
+AWS Account
+|
+|-- IAM Group: Developers
+|   |
+|   |-- IAM User: dev-user
+|   |
+|   |-- Policy: ReadOnlyAccess
+|
+|-- IAM Group: Admins
+    |
+    |-- IAM User: admin-user
+    |
+    |-- Administrative permissions
+```
+<br>
+<br>
 
+## Resources Used
 
-## Implementation Steps
+- IAM user: Dev_user
+- IAM group: Admin_user
+- AWS managed policy: ReadOnlyAccess
 
-1. Signed in to the AWS Management Console.
-2. Opened the IAM service.
-3. Created the Developers group.
-4. Attached the ReadOnlyAccess policy.
-5. Created dev-user and added the user to Developers.
-6. Tested permitted and denied actions.
-7. Recorded the results and captured sanitized screenshots.
-
-
-## Testing and Results
-
-| Test                      | Expected Result                  | Actual Result              |
-|---------------------------|----------------------------------|----------------------------|
-| User sign-in              | Successful                       | Successful                 |
-| View permitted resources  | Allowed where authorized         | Successfully viewed resources |
-| Attempt resource creation | Denied where not authorized      | Access denied              |
-| Verify group membership   | dev-user belongs to Developers   | Verified                   |
+<br>
+<br>
 
 
 ## Security Best Practices
@@ -63,18 +59,8 @@ AWS Account
 - Review permissions regularly.
 - Never commit passwords, secret keys, or sensitive account information.
 
-
-## Screenshots
-
-See the `screenshots/` directory for sanitized evidence of the configuration and permission tests.
-
-
-## Lessons Learned
-
-- How IAM users, groups, and policies work together.
-- How AWS evaluates permissions.
-- How to verify access controls.
-- How to document a cloud security lab.
+<br>
+<br>
 
 
 ## References
