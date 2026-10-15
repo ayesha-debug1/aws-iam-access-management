@@ -1,31 +1,5 @@
-Architecture Design
-
-The project uses the following structure:
-
-```
-AWS Account
-|
-|-- IAM Group: Developers
-|   |
-|   |-- IAM User: dev-user
-|   |
-|   |-- Policy: ReadOnlyAccess
-|
-|-- IAM Group: Admins
-    |
-    |-- IAM User: admin-user
-    |
-    |-- Administrative permissions
-```
-
 
 # AWS IAM Project Implementation Steps
-
-
-## 1. Objective
-
-The objective of this implementation is to configure AWS IAM users and groups, assign permissions, and test access controls.
-The results help explain how AWS IAM supports access control and why permissions should follow the principle of least privilege.
 
 
 ## 2. Step 1: Access the AWS IAM Console
