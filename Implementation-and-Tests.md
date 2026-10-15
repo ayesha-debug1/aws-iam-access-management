@@ -54,7 +54,6 @@ Performed the following tests and recorded the actual results.
 | Test | Expected Result | Actual Result |
 |------|-----------------|---------------|
 | Admin sign-in | Successful | Successful - [View screenshot](Screenshots/Admin-signin.png) |
-| View permitted AWS resources | Allowed where authorized | Successfully viewed resources |
 | Attempt a resource-creation action | Creation successful due to full access | Successful - [View screenshot](Screenshots/Resource-creation-successfull.png) |
 | Verify group membership | Correct membership | admin-user belongs to Admins group - [View screenshot](Screenshots/verify-group-and-permission.png) |
 | Verify attached policy | Is attached successfully | Is attached successfully - [View screenshot](Screenshots/verify-group-and-permission.png) |
