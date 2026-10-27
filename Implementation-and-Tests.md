@@ -2,7 +2,7 @@
 # AWS IAM Project Implementation Steps
 
 
-## 1. Step 1: Access the AWS IAM Console
+## Step 1: Access the AWS IAM Console
 
 1. Sign in to the AWS Management Console.
 2. Search for IAM in the AWS service search bar.
@@ -11,7 +11,7 @@
    
 <br>
 
-## 2. Step 2: Create the 'Developers' & 'admin' Group
+## Step 2: Create the 'Developers' & 'admin' Group
 
 1. Open User groups in IAM.
 2. Select Create group.
@@ -23,7 +23,7 @@
 
 <br>
 
-## 3. Step 3: Create the Developer & admin User
+## Step 3: Create the Developer & admin User
 
 1. Open Users in IAM.
 2. Select Create user.
@@ -35,7 +35,7 @@
 
 <br>
 
-## 4. Step 5: Test Permissions
+## Step 5: Test Permissions
 
 Performed the following tests and recorded the actual results.
 
@@ -60,7 +60,7 @@ Performed the following tests and recorded the actual results.
 
 <br>
 
-## 5. Conclusion
+##  Conclusion
 
 This lab demonstrated how AWS Identity and Access Management (IAM) users, groups, and policies work together to control access to cloud resources. By assigning permissions through groups and applying the principle of least privilege, each user was given only the access needed for their role. Testing the access controls confirmed that permitted actions succeeded while restricted actions were denied, showing how AWS evaluates permissions in practice. Overall, the lab reinforced that careful permission design, regular reviews, and good security habits such as enabling MFA and keeping credentials out of repositories are essential for keeping an AWS environment secure
 
