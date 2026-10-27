@@ -35,7 +35,7 @@
 
 <br>
 
-## Step 5: Test Permissions
+## Step 4: Test Permissions
 
 Performed the following tests and recorded the actual results.
 
